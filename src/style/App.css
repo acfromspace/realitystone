@@ -1,0 +1,36 @@
+.Main {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "Header" "Footer";
+  min-height: 100vh;
+  text-align: center;
+}
+
+.App-logo {
+  animation: Im-floating-yay infinite 15s linear;
+  height: 20vmin;
+}
+
+.Header {
+  grid-area: Header;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.Footer {
+  grid-area: Footer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* font-size: 2vmin; */
+}
+
+@keyframes Im-floating-yay {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
